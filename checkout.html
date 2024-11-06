@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - SHOP</title>
+    <link rel="shortcut icon" href="Images/logo/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="single_item.css"> -->
+    <link rel="stylesheet" href="cart_page.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-heading">
+            <a href="index.html" class="shop">S H O P</a>
+        </div>
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" id="checkbtn"><i style="font-size:20px" class="fa">&#xf0c9;</i></label>
+            <label for="check" class="overlay"></label>
+            <div class="nav-element">
+                <a href="mens_outerwear.html">Men's Outerwear</a>
+                <a href="ladies_outerwear.html">Ladies Outerwear</a>
+                <a href="mens_tshirts.html">Men's T-Shirts</a>
+                <a href="ladies_tshirts.html">Ladies T-Shirts</a>
+            </div>
+        </nav>
+        <a href="cart_page.html" class="cart"><i style="font-size:20px" class="fa cart">&#xf07a;</i></a>
+        <div class="item-counter">4</div>
+
+        <div class="heading-checkout">
+            <p id="checkout-top-header">Checkout</p>
+            <p class="span">Shop is a demo app - form data will not be sent</p>
+        </div>
+        
+        <div class="form-container">
+            <div class="account">
+                <div class="account-info">
+                    <h3>Account Information</h3>
+                    <input type="email" placeholder="Email" required>
+                    <input type="number" placeholder="Phone Number" required>
+                </div>
+
+               <div class="shipping">
+                    <h3>Shipping Address</h3>
+                    <input type="text" placeholder="Address" required>
+                    <input type="text" placeholder="City" required>
+
+                    <div class="address-info">
+                        <input type="text" class="state" placeholder="State/Province" required> 
+                        <input type="text" class="zip" placeholder="Zip/Postal Code" required> 
+                    </div>
+                    <div class="selector-container">
+                        <label for="country" id="country-label">Country</label>
+                        <select name="country" id="country">
+                            <option value="United States" selected>United States</option>
+                            <option value="Canada">Canada</option>
+                        </select>
+                    </div>
+               </div>
+
+                <div class="billing">
+                    <h3>Billing Address</h3>
+                    <div class="billing-checkbox">
+                        <input type="checkbox" id="billing-check">
+                        <label for="billing-check" >Use Different Billing Address</label>
+                    </div>
+                    <input type="text" placeholder="Address" id="address" required>
+                    <input type="text" placeholder="City" id="city" required>
+                    <div class="address-info">
+                        <input type="text" class="state" placeholder="State/Province" required>
+                        <input type="text" class="zip" placeholder="Zip/Postal Code" required>    
+                    </div>
+
+                    <div class="selector-container">
+                        <label for="country" id="country-label">Country</label>
+                        <select name="country" id="country">
+                            <option value="United States" selected>United States</option>
+                            <option value="Canada">Canada</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-info">
+                <div class="payment-method">
+                    <h3>Payment Method</h3>
+                    <input type="text" placeholder="Cardholder Name" required>
+                    
+                    <input type="number" placeholder="Card Number" required>
+                    <div class="date-selector">
+                        <div class="month-div">
+                            <label for="month" class="month-label">Expiry</label>
+                            <select name="month" id="month">
+                                <option value="jan" selected>Jan</option>
+                                <option value="feb">Feb</option>
+                                <option value="mar">Mar</option>
+                            </select>
+                        </div>
+                           
+                        <select name="year" id="year">
+                            <option value="2016" selected>2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                        </select>
+                      
+                        <input type="number" placeholder="CVV" class="cvv" required>
+                    
+                    </div>
+                </div>
+                <div class="order-summary">
+                    <h3 style="margin-top: 30px; margin-bottom: 20px;">Order Summary</h3>
+                    <div class="order-items">
+                        <p>Men's Tech Shell Full-Zip</p>
+                        <p>$50.20</p>
+                    </div>
+                    <div class="order-items">
+                        <p>Anvil L/S Crew Neck - Grey</p>
+                        <p>$22.15</p>
+                    </div>
+                    <div class="order-items">
+                        <p>Ladies Google New York T-Shirt</p>
+                        <p>$18.35</p>
+                    </div>
+                    <div class="order-items">
+                        <p>Ladies Pullover L/S Hood</p>
+                        <p>$36.50</p>
+                    </div>
+                </div>
+                <div class="total">
+                    <p>Total</p>
+                    <p>$127.20</p>
+                </div>
+                <button type="submit">PLACEORDER</button>
+            </div>
+        </div>
+
+        <div class="made-by">
+            <a href="#" class="polymer"><span>Made by Polymer</span></a>
+            <p class="footer">DEMO ONLY</p>
+        </div>
+    </div>
+</body>
+</html>

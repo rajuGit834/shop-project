@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Item Page - SHOP</title>
+    <link rel="shortcut icon" href="Images/logo/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="single_item.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-heading">
+            <a href="index.html" class="shop">S H O P</a>
+        </div>
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" id="checkbtn"><i style="font-size:20px" class="fa">&#xf0c9;</i></label>
+            <label for="check" class="overlay"></label>
+            <div class="nav-element">
+                <a href="mens_outerwear.html">Men's Outerwear</a>
+                <a href="ladies_outerwear.html">Ladies Outerwear</a>
+                <a href="mens_tshirts.html">Men's T-Shirts</a>
+                <a href="ladies_tshirts.html">Ladies T-Shirts</a>
+            </div>
+        </nav>
+        <a href="mens_outerwear.html" class="left-arrow"><i class="fa-solid fa-arrow-left"></i></a>
+        <a href="cart_page.html" class="cart"><i style="font-size:20px" class="fa cart">&#xf07a;</i></a>
+        
+        <div class="single-item-box">
+            <div class="img-box-single">
+                <img src="Images/10-15068A.jpg" alt="10-15068B">
+            </div>
+            <div class="feature-box">
+                <p class="heading-line">Men's Tech Shell Full-Zip</p>
+                <span>$50.20</span>
+                <hr class="hori" style="border: 1px solid #adabab; margin: 10px 0;">
+                <div class="lbl">
+                    <label for="option" id="sizes" class="select-label">Size</label>
+                    <select name="options" id="option" class="select-btn">
+                        <option value="option1">XS</option>
+                        <option value="option2">S</option>
+                        <option value="option3" selected>M</option>
+                        <option value="option4">L</option>
+                        <option value="option5">XL</option>
+                    </select>
+                    <label for="option" class="arrow">▼</label>
+                </div>
+                <hr class="hori" style="border: 1px solid #adabab; margin: 10px 0;">
+                
+                <div class="lbl">
+                    <label for="qty" class="select-label">Quantity </label>
+                    <select name="qty" id="qty" class="select-btn">
+                        <option value="option1" selected>1</option>
+                        <option value="option2">2</option>
+                        <option value="option3">3</option>
+                        <option value="option4">4</option>
+                        <option value="option5">5</option>
+                    </select>
+                    <label for="qty" class="arrow">▼</label>
+                </div>
+                <hr class="hori" style="border: 1px solid #adabab; margin: 10px 0;">
+                <p class="description">Description</p>
+                <p class="description-line">A versatile full-zip that you can wear all day long and even to the gym. This technical shell features moisture-wicking fabric, added stretch and a hidden pocket for your smartphone or media player. </p>
+                <ul>Features:
+                    <li style="margin-top: 10px;">100% polyester</li>
+                    <li>Smooth, technical front with textured mesh back.</li>
+                    <li>Drawstring bottom for adjustable fit.</li>
+                    <li>Raglan sleeves.</li>
+                    <li>Available in forest green with the white Google logo embroidered at left chest.</li>
+                </ul>
+                <div class="btn-large">
+                    <button type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <button type="button">ADD TO CART</button>
+        </div>
+        <div class="made-by">
+            <a href="#" class="polymer"><span>Made by Polymer</span></a>
+            <p class="footer">DEMO ONLY</p>
+        </div>
+    </div>
+</body>
+</html>
